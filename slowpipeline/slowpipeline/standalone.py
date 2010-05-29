@@ -50,7 +50,6 @@ class CrawlingSession(object):
         self.portno = None
 
     def run(self):
-        print 'all runned up'
         if not self.portno:
             self.port = start_test_site()
             self.portno = self.port.getHost().port
